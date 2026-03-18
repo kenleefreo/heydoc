@@ -1,0 +1,2 @@
+# heydoc
+AI Doctor
