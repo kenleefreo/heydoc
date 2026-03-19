@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://heydoc.local/schemas/evidence-node.schema.json",
+  "title": "EvidenceNode",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "claim", "supports", "provenance"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Stable identifier for the evidence node."
+    },
+    "claim": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Atomic claim asserted by the system."
+    },
+    "supports": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["kind", "ref"],
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": ["static_doc", "live_data_receipt", "structured_dataset", "kg_node"]
+          },
+          "ref": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Reference to a support artifact (e.g., docs.cite ID, request_id, dataset version, kg node id)."
+          },
+          "excerpt": {
+            "type": "string",
+            "description": "Optional short excerpt/snippet for human review; not required for machine verification."
+          }
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["created_at_utc", "created_by", "verification"],
+      "properties": {
+        "created_at_utc": { "type": "string", "format": "date-time" },
+        "created_by": {
+          "type": "string",
+          "description": "Component that created the node (e.g., trunk5, verifier, mcp-terminology)."
+        },
+        "verification": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status"],
+          "properties": {
+            "status": { "type": "string", "enum": ["unverified", "verified", "rejected"] },
+            "reasons": { "type": "array", "items": { "type": "string" } }
+          }
+        }
+      }
+    }
+  }
+}
+
