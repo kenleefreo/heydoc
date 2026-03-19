@@ -1,13 +1,14 @@
 {
-  "run_id": "run-1773902896434-ahx5wec",
-  "timestamp_utc": "2026-03-19T06:48:16.434Z",
-  "trunk_id": "6.0",
-  "session_ref": "enc-stub-006",
+  "run_id": "run-1773903259361-5lh2lte",
+  "timestamp_utc": "2026-03-19T06:54:19.361Z",
+  "trunk_id": "7.0",
+  "session_ref": "enc-stub-007",
   "pass": true,
   "results": [
     {
       "check": "no_invented_codes",
-      "passed": true
+      "passed": true,
+      "reason": "output contains code-like references; terminology receipt required"
     },
     {
       "check": "no_invented_guidelines",

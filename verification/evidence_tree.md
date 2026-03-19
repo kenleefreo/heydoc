@@ -1,7 +1,7 @@
 # Evidence tree
 
-**Run ID:** run-1773902896434-ahx5wec | **Trunk:** 6.0
-**Timestamp:** 2026-03-19T06:48:16.434Z
+**Run ID:** run-1773903259361-5lh2lte | **Trunk:** 7.0
+**Timestamp:** 2026-03-19T06:54:19.361Z
 
 ## Claims → proofs
 
@@ -18,7 +18,7 @@
 
 **PASS**
 
-- no_invented_codes: pass
+- no_invented_codes: pass — output contains code-like references; terminology receipt required
 - no_invented_guidelines: pass
 - no_invented_operations: pass
 - no_repo_invention: pass

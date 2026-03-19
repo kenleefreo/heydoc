@@ -59,20 +59,8 @@ All design-phase outputs were added to the repo and pushed to `origin/master`.
   - `trunk/prompts/trunk-3.0-system.md`: system prompt for Trunk 3.0 (structured history enrichment; no diagnosis, no dosages; output contract: follow_up_questions, structured_history, evidence_refs).
   - `integration/trunk-pipeline.js`: `TRUNK_CONSTRAINTS["3.0"]` = ["no diagnosis", "no dosages", "history enrichment only"].
   - `trunk/trunk-3.0-stub-agent.js`: stub agent for Trunk 3.0; `npm run trunk:stub:3`. `npm run trunk:stub:all` runs both 2.0 and 3.0 stubs.
-
-- **Trunk 4.0 system prompt and stub**:
-  - `trunk/prompts/trunk-4.0-system.md`: problem representation + risk framing prompt (no diagnosis, no dosages, explicit uncertainty).
-  - `integration/trunk-pipeline.js`: `TRUNK_CONSTRAINTS["4.0"]` = ["no diagnosis", "no dosages", "problem representation and risk framing only"].
-  - `trunk/trunk-4.0-stub-agent.js`: stub agent for Trunk 4.0; `npm run trunk:stub:4`.
-  - `package.json` and CI keep `trunk:stub:all` as the aggregate run (now 2.0 + 3.0 + 4.0).
-
-- **Trunk 5.0 system prompt and stub**:
-  - `trunk/prompts/trunk-5.0-system.md`: Axis B deterministic rule-out framing prompt (no diagnosis, no dosages, explicit missing proof).
-  - `integration/trunk-pipeline.js`: `TRUNK_CONSTRAINTS["5.0"]` includes no diagnosis/no dosages and Axis B rule-out framing constraint.
-  - `trunk/trunk-5.0-stub-agent.js`: stub agent for Trunk 5.0; `npm run trunk:stub:5`.
-  - `package.json` and aggregate run updated: `trunk:stub:all` now runs 2.0 + 3.0 + 4.0 + 5.0.
-
-- **Trunk 6.0 system prompt and stub**:
-  - `trunk/prompts/trunk-6.0-system.md`: investigation interpretation prompt (no diagnosis, no dosages, LOINC-grounded evidence discipline).
-  - `trunk/trunk-6.0-stub-agent.js`: stub agent for Trunk 6.0; `npm run trunk:stub:6`.
-  - `package.json` aggregate run updated: `trunk:stub:all` now runs 2.0 + 3.0 + 4.0 + 5.0 + 6.0.
+- **Trunk 7.0 system prompt and stub**:
+  - `trunk/prompts/trunk-7.0-system.md`: code lock-in prompt (no diagnosis, no dosages, terminology receipt required for coded output).
+  - `integration/trunk-pipeline.js`: `TRUNK_CONSTRAINTS["7.0"]` includes no diagnosis/no dosages and terminology-receipt lock-in constraints.
+  - `trunk/trunk-7.0-stub-agent.js`: stub agent for Trunk 7.0; `npm run trunk:stub:7`.
+  - `package.json` aggregate run updated: `trunk:stub:all` now runs 2.0 through 7.0 stubs.

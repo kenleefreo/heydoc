@@ -21,8 +21,8 @@ const TRUNK_CONSTRAINTS = {
   "3.0": ["no diagnosis", "no dosages", "history enrichment only"],
   "4.0": ["no diagnosis", "no dosages", "problem representation and risk framing only"],
   "5.0": ["no diagnosis", "no dosages", "Axis B rule-out per template"],
-  "6.0": ["investigation interpretation only", "LOINC-derived"],
-  "7.0": ["code lock-in requires terminology receipt", "benign registry gating"],
+  "6.0": ["no diagnosis", "no dosages", "investigation interpretation only", "LOINC-derived"],
+  "7.0": ["no diagnosis", "no dosages", "code lock-in requires terminology receipt", "benign registry gating"],
   "8.0": ["no autonomous prescribing", "pharmacology firewall HARD_FAIL blocks"],
   "9.0": ["red-flag questionnaires keyed by SNOMED", "no diagnosis"],
 };
