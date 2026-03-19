@@ -74,3 +74,8 @@ All design-phase outputs were added to the repo and pushed to `origin/master`.
   - `integration/trunk-pipeline.js`: `TRUNK_CONSTRAINTS["9.0"]` includes no diagnosis/no dosages plus red-flag questionnaire gating.
   - `trunk/trunk-9.0-stub-agent.js`: stub agent for Trunk 9.0; `npm run trunk:stub:9`.
   - `package.json` aggregate run updated: `trunk:stub:all` now runs 2.0 through 9.0 stubs.
+- **Trunk 1.0 (originating/master) system prompt and stub**:
+  - `trunk/prompts/trunk-1.0-system.md`: master/originating intake-routing and safety-gate prompt (no diagnosis, no dosages, evidence-bound escalation logic).
+  - `trunk/trunk-1.0-stub-agent.js`: stub agent for Trunk 1.0; `npm run trunk:stub:1`.
+  - `package.json` scripts updated: `trunk:stub` now aliases Trunk 1.0; added explicit `trunk:stub:2` for Trunk 2.0; `trunk:stub:all` now runs 1.0 through 9.0 stubs.
+  - `integration/README.md` and `trunk/prompts/README.md` updated to include Trunk 1.0 as the originating step.

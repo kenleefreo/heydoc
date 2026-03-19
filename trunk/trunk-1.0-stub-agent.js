@@ -1,16 +1,14 @@
 #!/usr/bin/env node
 /**
- * Minimal stub for Trunk 2.0 (triage): runs one turn through the grounding pipeline
- * and verification layer. All output goes through runTrunkWithGrounding.
+ * Trunk 1.0 (master/originating) stub: intake routing + safety gate only.
  * Set HEYDOC_USE_MCP=1 to use live MCP retrieval (docs + identity-au + terminology).
- * For a real LLM run: use getTrunkSystemPrompt(TRUNK_ID) as system message, then pass model output as candidateOutput.
  */
 import { runTrunkWithGrounding, getTrunkSystemPrompt } from "../integration/trunk-pipeline.js";
 
-const TRUNK_ID = "2.0";
+const TRUNK_ID = "1.0";
 const SYSTEM_PROMPT = getTrunkSystemPrompt(TRUNK_ID);
 const USER_INPUT = "Patient reports lower back pain for 2 weeks, no red flags.";
-const STUB_LLM_OUTPUT = `Based on the provided context (citation: cw-au:imaging-lbp:2024-01), we do not recommend imaging for non-specific low back pain without red flags. Triage: continue with history and red-flag questionnaire. No diagnosis or dosages.`;
+const STUB_LLM_OUTPUT = `Intake summary: persistent low back pain for 2 weeks, no reported red flags. Safety gate: clear. Routing plan: next trunks [2.0, 3.0] for triage and structured history enrichment. Missing inputs: none at this stage. Evidence refs: citation cw-au:imaging-lbp:2024-01.`;
 
 async function main() {
   const result = await runTrunkWithGrounding(TRUNK_ID, USER_INPUT, {
