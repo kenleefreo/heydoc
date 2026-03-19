@@ -48,5 +48,6 @@ Minimal stubs that run one turn through the pipeline and write verification arti
 - **Trunk 2.0** (triage): `trunk/stub-agent.js` — `npm run trunk:stub`
 - **Trunk 3.0** (history enrichment): `trunk/trunk-3.0-stub-agent.js` — `npm run trunk:stub:3`
 - **Trunk 4.0** (problem representation): `trunk/trunk-4.0-stub-agent.js` — `npm run trunk:stub:4`
+- **Trunk 5.0** (Axis B rule-out framing): `trunk/trunk-5.0-stub-agent.js` — `npm run trunk:stub:5`
 
 Run all: `npm run trunk:stub:all`. CI runs `trunk:stub:all` after contract tests and verification.

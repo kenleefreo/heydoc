@@ -20,7 +20,7 @@ const TRUNK_CONSTRAINTS = {
   "2.0": ["no diagnosis", "no dosages", "triage protocol only"],
   "3.0": ["no diagnosis", "no dosages", "history enrichment only"],
   "4.0": ["no diagnosis", "no dosages", "problem representation and risk framing only"],
-  "5.0": ["no dosages", "Axis B rule-out per template"],
+  "5.0": ["no diagnosis", "no dosages", "Axis B rule-out per template"],
   "6.0": ["investigation interpretation only", "LOINC-derived"],
   "7.0": ["code lock-in requires terminology receipt", "benign registry gating"],
   "8.0": ["no autonomous prescribing", "pharmacology firewall HARD_FAIL blocks"],

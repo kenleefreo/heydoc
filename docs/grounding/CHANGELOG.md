@@ -65,3 +65,9 @@ All design-phase outputs were added to the repo and pushed to `origin/master`.
   - `integration/trunk-pipeline.js`: `TRUNK_CONSTRAINTS["4.0"]` = ["no diagnosis", "no dosages", "problem representation and risk framing only"].
   - `trunk/trunk-4.0-stub-agent.js`: stub agent for Trunk 4.0; `npm run trunk:stub:4`.
   - `package.json` and CI keep `trunk:stub:all` as the aggregate run (now 2.0 + 3.0 + 4.0).
+
+- **Trunk 5.0 system prompt and stub**:
+  - `trunk/prompts/trunk-5.0-system.md`: Axis B deterministic rule-out framing prompt (no diagnosis, no dosages, explicit missing proof).
+  - `integration/trunk-pipeline.js`: `TRUNK_CONSTRAINTS["5.0"]` includes no diagnosis/no dosages and Axis B rule-out framing constraint.
+  - `trunk/trunk-5.0-stub-agent.js`: stub agent for Trunk 5.0; `npm run trunk:stub:5`.
+  - `package.json` and aggregate run updated: `trunk:stub:all` now runs 2.0 + 3.0 + 4.0 + 5.0.
