@@ -7,3 +7,4 @@ System prompts for each Trunk agent. Load via `getTrunkSystemPrompt(trunkId)` fr
 
 - **trunk-4.0-system.md** — Problem representation and risk framing only; no diagnosis, no dosages; keep uncertainty explicit.
 - **trunk-5.0-system.md** — Axis B deterministic rule-out framing; no diagnosis, no dosages; unknowns/missing proof explicit.
+- **trunk-6.0-system.md** — Investigation interpretation only; no diagnosis, no dosages; LOINC-grounded evidence required.

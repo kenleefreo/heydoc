@@ -4,12 +4,12 @@ Trunk agents should send all turns through the grounding pipeline and verificati
 
 ## Usage from a Trunk agent
 
-1. **System prompt**: Load the Trunk 2.0 (or other) system prompt when building the LLM context:
+1. **System prompt**: Load the trunk system prompt you are running (e.g. Trunk 6.0) when building the LLM context:
 
 ```js
 import { getTrunkSystemPrompt, runTrunkWithGrounding } from "../integration/trunk-pipeline.js";
 
-const systemPrompt = getTrunkSystemPrompt("3.0");  // reads trunk/prompts/trunk-3.0-system.md
+const systemPrompt = getTrunkSystemPrompt("6.0");  // reads trunk/prompts/trunk-6.0-system.md
 // Use systemPrompt as the system message for your LLM; then run generation and pass output to runTrunkWithGrounding.
 ```
 

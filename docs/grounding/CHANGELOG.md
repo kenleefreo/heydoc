@@ -71,3 +71,8 @@ All design-phase outputs were added to the repo and pushed to `origin/master`.
   - `integration/trunk-pipeline.js`: `TRUNK_CONSTRAINTS["5.0"]` includes no diagnosis/no dosages and Axis B rule-out framing constraint.
   - `trunk/trunk-5.0-stub-agent.js`: stub agent for Trunk 5.0; `npm run trunk:stub:5`.
   - `package.json` and aggregate run updated: `trunk:stub:all` now runs 2.0 + 3.0 + 4.0 + 5.0.
+
+- **Trunk 6.0 system prompt and stub**:
+  - `trunk/prompts/trunk-6.0-system.md`: investigation interpretation prompt (no diagnosis, no dosages, LOINC-grounded evidence discipline).
+  - `trunk/trunk-6.0-stub-agent.js`: stub agent for Trunk 6.0; `npm run trunk:stub:6`.
+  - `package.json` aggregate run updated: `trunk:stub:all` now runs 2.0 + 3.0 + 4.0 + 5.0 + 6.0.

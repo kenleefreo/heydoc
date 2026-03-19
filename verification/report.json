@@ -1,8 +1,8 @@
 {
-  "run_id": "run-1773902688288-kqq1hcw",
-  "timestamp_utc": "2026-03-19T06:44:48.288Z",
-  "trunk_id": "5.0",
-  "session_ref": "enc-stub-005",
+  "run_id": "run-1773902896434-ahx5wec",
+  "timestamp_utc": "2026-03-19T06:48:16.434Z",
+  "trunk_id": "6.0",
+  "session_ref": "enc-stub-006",
   "pass": true,
   "results": [
     {

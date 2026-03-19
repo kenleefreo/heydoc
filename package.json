@@ -12,7 +12,8 @@
     "trunk:stub:3": "node trunk/trunk-3.0-stub-agent.js",
     "trunk:stub:4": "node trunk/trunk-4.0-stub-agent.js",
     "trunk:stub:5": "node trunk/trunk-5.0-stub-agent.js",
-    "trunk:stub:all": "node trunk/stub-agent.js && node trunk/trunk-3.0-stub-agent.js && node trunk/trunk-4.0-stub-agent.js && node trunk/trunk-5.0-stub-agent.js"
+    "trunk:stub:6": "node trunk/trunk-6.0-stub-agent.js",
+    "trunk:stub:all": "node trunk/stub-agent.js && node trunk/trunk-3.0-stub-agent.js && node trunk/trunk-4.0-stub-agent.js && node trunk/trunk-5.0-stub-agent.js && node trunk/trunk-6.0-stub-agent.js"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.0",

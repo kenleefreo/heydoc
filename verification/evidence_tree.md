@@ -1,7 +1,7 @@
 # Evidence tree
 
-**Run ID:** run-1773902688288-kqq1hcw | **Trunk:** 5.0
-**Timestamp:** 2026-03-19T06:44:48.288Z
+**Run ID:** run-1773902896434-ahx5wec | **Trunk:** 6.0
+**Timestamp:** 2026-03-19T06:48:16.434Z
 
 ## Claims → proofs
 
