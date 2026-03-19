@@ -4,12 +4,12 @@ Trunk agents should send all turns through the grounding pipeline and verificati
 
 ## Usage from a Trunk agent
 
-1. **System prompt**: Load the trunk system prompt you are running (e.g. Trunk 8.0) when building the LLM context:
+1. **System prompt**: Load the trunk system prompt you are running (e.g. Trunk 9.0) when building the LLM context:
 
 ```js
 import { getTrunkSystemPrompt, runTrunkWithGrounding } from "../integration/trunk-pipeline.js";
 
-const systemPrompt = getTrunkSystemPrompt("8.0");  // reads trunk/prompts/trunk-8.0-system.md
+const systemPrompt = getTrunkSystemPrompt("9.0");  // reads trunk/prompts/trunk-9.0-system.md
 // Use systemPrompt as the system message for your LLM; then run generation and pass output to runTrunkWithGrounding.
 ```
 
@@ -51,5 +51,7 @@ Minimal stubs that run one turn through the pipeline and write verification arti
 - **Trunk 5.0** (Axis B rule-out framing): `trunk/trunk-5.0-stub-agent.js` — `npm run trunk:stub:5`
 - **Trunk 6.0** (investigation interpretation): `trunk/trunk-6.0-stub-agent.js` — `npm run trunk:stub:6`
 - **Trunk 7.0** (code lock-in): `trunk/trunk-7.0-stub-agent.js` — `npm run trunk:stub:7`
+- **Trunk 8.0** (pharmacology firewall): `trunk/trunk-8.0-stub-agent.js` — `npm run trunk:stub:8`
+- **Trunk 9.0** (red-flag questionnaire): `trunk/trunk-9.0-stub-agent.js` — `npm run trunk:stub:9`
 
 Run all: `npm run trunk:stub:all`. CI runs `trunk:stub:all` after contract tests and verification.

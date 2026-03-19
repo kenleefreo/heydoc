@@ -24,7 +24,7 @@ const TRUNK_CONSTRAINTS = {
   "6.0": ["no diagnosis", "no dosages", "investigation interpretation only", "LOINC-derived"],
   "7.0": ["no diagnosis", "no dosages", "code lock-in requires terminology receipt", "benign registry gating"],
   "8.0": ["no diagnosis", "no dosages", "no autonomous prescribing", "pharmacology firewall HARD_FAIL blocks"],
-  "9.0": ["red-flag questionnaires keyed by SNOMED", "no diagnosis"],
+  "9.0": ["no diagnosis", "no dosages", "red-flag questionnaires keyed by SNOMED"],
 };
 
 /**

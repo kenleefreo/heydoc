@@ -64,9 +64,13 @@ All design-phase outputs were added to the repo and pushed to `origin/master`.
   - `integration/trunk-pipeline.js`: `TRUNK_CONSTRAINTS["7.0"]` includes no diagnosis/no dosages and terminology-receipt lock-in constraints.
   - `trunk/trunk-7.0-stub-agent.js`: stub agent for Trunk 7.0; `npm run trunk:stub:7`.
   - `package.json` aggregate run updated: `trunk:stub:all` now runs 2.0 through 7.0 stubs.
-
 - **Trunk 8.0 system prompt and stub**:
   - `trunk/prompts/trunk-8.0-system.md`: pharmacology firewall intent-check prompt (no diagnosis, no dosages, blocked/HARD_FAIL handling explicit).
   - `integration/trunk-pipeline.js`: `TRUNK_CONSTRAINTS["8.0"]` includes no diagnosis/no dosages and pharmacology firewall blocking constraints.
   - `trunk/trunk-8.0-stub-agent.js`: stub agent for Trunk 8.0; `npm run trunk:stub:8`.
   - `package.json` aggregate run updated: `trunk:stub:all` now runs 2.0 through 8.0 stubs.
+- **Trunk 9.0 system prompt and stub**:
+  - `trunk/prompts/trunk-9.0-system.md`: red-flag questionnaire and escalation-gate prompt (no diagnosis, no dosages, unknown/blocked states explicit).
+  - `integration/trunk-pipeline.js`: `TRUNK_CONSTRAINTS["9.0"]` includes no diagnosis/no dosages plus red-flag questionnaire gating.
+  - `trunk/trunk-9.0-stub-agent.js`: stub agent for Trunk 9.0; `npm run trunk:stub:9`.
+  - `package.json` aggregate run updated: `trunk:stub:all` now runs 2.0 through 9.0 stubs.
