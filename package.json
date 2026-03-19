@@ -1,0 +1,17 @@
+{
+  "name": "heydoc",
+  "version": "0.1.0",
+  "description": "HeyDoc grounding + MCP stack",
+  "type": "module",
+  "scripts": {
+    "test": "node test/contract-docs.js && node test/contract-identity-au.js && node test/contract-terminology.js",
+    "test:docs": "node test/contract-docs.js",
+    "test:identity": "node test/contract-identity-au.js",
+    "verification": "node verification/run.js",
+    "trunk:stub": "node trunk/stub-agent.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.23.0"
+  }
+}

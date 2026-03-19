@@ -1,0 +1,30 @@
+{
+  "run_id": "run-1773901492290-3ud88w3",
+  "timestamp_utc": "2026-03-19T06:24:52.290Z",
+  "trunk_id": "2.0",
+  "session_ref": "enc-stub-001",
+  "pass": true,
+  "results": [
+    {
+      "check": "no_invented_codes",
+      "passed": true
+    },
+    {
+      "check": "no_invented_guidelines",
+      "passed": true
+    },
+    {
+      "check": "no_invented_operations",
+      "passed": true
+    },
+    {
+      "check": "no_repo_invention",
+      "passed": true
+    },
+    {
+      "check": "hard_stop_enforcement",
+      "passed": true
+    }
+  ],
+  "missing_receipts": []
+}

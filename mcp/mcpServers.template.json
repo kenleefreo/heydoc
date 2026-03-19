@@ -2,7 +2,7 @@
   "mcpServers": {
     "docs": {
       "command": "node",
-      "args": ["mcp/servers/docs/dist/index.js"],
+      "args": ["mcp/servers/docs/index.js"],
       "env": {
         "HEYDOC_ENV": "local",
         "HEYDOC_DATA_DIR": "${workspaceFolder}/.heydoc-data",
@@ -23,7 +23,7 @@
     },
     "identity-au": {
       "command": "node",
-      "args": ["mcp/servers/identity-au/dist/index.js"],
+      "args": ["mcp/servers/identity-au/index.js"],
       "env": {
         "HEYDOC_ENV": "local",
         "HEYDOC_MODE_DEFAULT": "mock",
@@ -35,7 +35,7 @@
     },
     "terminology": {
       "command": "node",
-      "args": ["mcp/servers/terminology/dist/index.js"],
+      "args": ["mcp/servers/terminology/index.js"],
       "env": {
         "HEYDOC_ENV": "local",
         "HEYDOC_MODE_DEFAULT": "mock",
