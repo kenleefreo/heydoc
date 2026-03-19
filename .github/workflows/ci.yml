@@ -27,5 +27,5 @@ jobs:
       - name: Verification harness
         run: npm run verification
 
-      - name: Trunk stub (pipeline + verification)
-        run: npm run trunk:stub
+      - name: Trunk stubs (2.0 + 3.0 pipeline + verification)
+        run: npm run trunk:stub:all

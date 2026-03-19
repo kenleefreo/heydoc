@@ -9,7 +9,7 @@ Trunk agents should send all turns through the grounding pipeline and verificati
 ```js
 import { getTrunkSystemPrompt, runTrunkWithGrounding } from "../integration/trunk-pipeline.js";
 
-const systemPrompt = getTrunkSystemPrompt("2.0");  // reads trunk/prompts/trunk-2.0-system.md
+const systemPrompt = getTrunkSystemPrompt("3.0");  // reads trunk/prompts/trunk-3.0-system.md
 // Use systemPrompt as the system message for your LLM; then run generation and pass output to runTrunkWithGrounding.
 ```
 
@@ -41,12 +41,12 @@ if (!pass) {
 
 4. **Trunk-specific constraints** are in `integration/trunk-pipeline.js` (`TRUNK_CONSTRAINTS`). Add or change constraints there as trunks are implemented.
 
-## First Trunk stub
+## Trunk stubs
 
-A minimal stub that runs one turn through the pipeline lives in `trunk/stub-agent.js`. Run it with:
+Minimal stubs that run one turn through the pipeline and write verification artifacts:
 
-```bash
-node trunk/stub-agent.js
-```
+- **Trunk 2.0** (triage): `trunk/stub-agent.js` — `npm run trunk:stub`
+- **Trunk 3.0** (history enrichment): `trunk/trunk-3.0-stub-agent.js` — `npm run trunk:stub:3`
+- **Trunk 4.0** (problem representation): `trunk/trunk-4.0-stub-agent.js` — `npm run trunk:stub:4`
 
-It uses the integration layer and writes verification artifacts.
+Run all: `npm run trunk:stub:all`. CI runs `trunk:stub:all` after contract tests and verification.

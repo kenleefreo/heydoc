@@ -54,4 +54,14 @@ All design-phase outputs were added to the repo and pushed to `origin/master`.
   - `integration/trunk-pipeline.js`: `getTrunkSystemPrompt(trunkId)` loads `trunk/prompts/trunk-{id}-system.md` for use as LLM system message.
   - `integration/README.md`: documents system prompt loading and pipeline usage.
 - **CI (GitHub Actions)**:
-  - `.github/workflows/ci.yml`: on push/PR to master or main, runs `npm ci`, `npm test`, `npm run verification`, `npm run trunk:stub`.
+  - `.github/workflows/ci.yml`: on push/PR to master or main, runs `npm ci`, `npm test`, `npm run verification`, `npm run trunk:stub:all` (Trunk 2.0 + 3.0 stubs).
+- **Trunk 3.0 system prompt and stub**:
+  - `trunk/prompts/trunk-3.0-system.md`: system prompt for Trunk 3.0 (structured history enrichment; no diagnosis, no dosages; output contract: follow_up_questions, structured_history, evidence_refs).
+  - `integration/trunk-pipeline.js`: `TRUNK_CONSTRAINTS["3.0"]` = ["no diagnosis", "no dosages", "history enrichment only"].
+  - `trunk/trunk-3.0-stub-agent.js`: stub agent for Trunk 3.0; `npm run trunk:stub:3`. `npm run trunk:stub:all` runs both 2.0 and 3.0 stubs.
+
+- **Trunk 4.0 system prompt and stub**:
+  - `trunk/prompts/trunk-4.0-system.md`: problem representation + risk framing prompt (no diagnosis, no dosages, explicit uncertainty).
+  - `integration/trunk-pipeline.js`: `TRUNK_CONSTRAINTS["4.0"]` = ["no diagnosis", "no dosages", "problem representation and risk framing only"].
+  - `trunk/trunk-4.0-stub-agent.js`: stub agent for Trunk 4.0; `npm run trunk:stub:4`.
+  - `package.json` and CI keep `trunk:stub:all` as the aggregate run (now 2.0 + 3.0 + 4.0).
